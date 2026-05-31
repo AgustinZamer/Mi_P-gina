@@ -1,0 +1,216 @@
+:root {
+    --color-principal: #00ffcc;
+    --color-fondo: #111;
+    --color-tarjeta: #1b1b1b;
+    --fuente-principal: 'Montserrat', Arial, sans-serif;
+}
+
+
+body {
+    font-family: var(--fuente-principal);
+    margin: 0;
+    background-color: var(--color-fondo);
+    color: white;
+}
+
+header {
+    background: linear-gradient(90deg, #000, #222);
+    padding: 25px;
+    text-align: center;
+    border-bottom: 3px solid var(--color-principal);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 40px;
+    color: var(--color-principal);
+}
+
+header p {
+    color: #ccc;
+    margin-top: 10px;
+}
+
+nav {
+    margin-top: 20px;
+    display: flex;          
+    justify-content: center;
+    flex-wrap: wrap;        
+}
+
+nav a {
+    color: var(--color-principal);
+    text-decoration: none;
+    margin: 10px 15px;      
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: white;
+}
+
+main {
+    padding: 20px;
+}
+
+section,
+article,
+aside {
+    background-color: var(--color-tarjeta);
+    margin-bottom: 25px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 255, 204, 0.2);
+}
+
+h2 {
+    color: var(--color-principal);
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+img {
+    border-radius: 10px;
+    margin: 10px;
+    border: 2px solid var(--color-principal);
+    transition: 0.3s;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    color: black;
+    margin-top: 15px;
+}
+
+.productos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 20px; 
+    justify-items: center; 
+    margin-top: 20px;
+}
+
+.productos-grid img {
+    margin: 0; 
+    width: 100%; 
+    max-width: 220px;
+    height: auto;
+}
+
+th {
+    background: var(--color-principal);
+    color: black;
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+form {
+    background: var(--color-tarjeta);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+button {
+    background: var(--var-color-principal, #00ffcc); 
+    background: var(--color-principal);
+    color: black;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: white;
+}
+
+aside {
+    text-align: center;
+    font-size: 20px;
+    color: var(--color-principal);
+    font-weight: bold;
+}
+
+footer {
+    background: black;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    border-top: 3px solid var(--color-principal);
+}
+
+section:hover, 
+article:hover, 
+aside:hover {
+    box-shadow: 0 0 18px rgba(0, 255, 204, 0.5);
+    transition: box-shadow 0.3s ease;
+}
+
+aside {
+    animation: pulsoNeon 2s infinite alternate ease-in-out;
+}
+
+@keyframes pulsoNeon {
+    from {
+        transform: scale(1);
+        box-shadow: 0 0 10px rgba(0, 255, 204, 0.2);
+    }
+    to {
+        transform: scale(1.02);
+        box-shadow: 0 0 20px rgba(0, 255, 204, 0.6);
+    }
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 32px; 
+    }
+
+    nav {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    nav a {
+        margin: 8px 0; 
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 26px; 
+    }
+
+    .productos-grid {
+        grid-template-columns: 1fr; 
+        gap: 15px;
+    }
+
+    form {
+        padding: 15px;
+    }
+}

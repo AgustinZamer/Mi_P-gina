@@ -23,9 +23,10 @@ Esta página se trata de mi portafolio personal, un sitio web de un local de ven
 - **Diseño Responsive:** Inclusión de Media Queries para adaptar la interfaz perfectamente a Tablets (768px) y Celulares (480px).
 
 ## 📸 Capturas del Proyecto
-Aquí podés ver una captura de la interfaz de PowerFit funcionando en tiempo real:
+Aquí podés ver unas capturas de la interfaz de PowerFit funcionando en tiempo real:
 
 ![Sitio Funcionando](imagenes/captura-sitio.png)
+![Sección de Contacto](imagenes/captura-contacto.png)
 
 ## 👤 Autor
 Agustín Zamer
